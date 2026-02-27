@@ -18,12 +18,12 @@ Turns natural language descriptions of cloud architectures into publication-read
 
 ### Claude.ai (Custom Skills)
 
-Copy the `diagram-as-code/` folder to your Claude skills directory.
+Copy the `cloud-diagram/` folder to your Claude skills directory.
 
 ### Claude Code
 
 ```bash
-cp -r diagram-as-code/ ~/.claude/skills/
+cp -r cloud-diagram/ ~/.claude/skills/
 ```
 
 ### Other Platforms (Cursor, Windsurf, Codex CLI)
@@ -131,7 +131,7 @@ python scripts/generate_node_refs.py --all-providers --output-dir references/
 ## Folder Structure
 
 ```
-diagram-as-code/
+cloud-diagram/
 ├── SKILL.md                          # Skill definition (agent reads this)
 ├── README.md                         # This file
 ├── scripts/

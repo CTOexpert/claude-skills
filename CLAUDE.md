@@ -24,7 +24,7 @@ The `SKILL.md` body serves as the full execution guide that Claude reads at invo
 
 ## Current Skills
 
-### cloud-diagram (`diagram-as-code/`)
+### cloud-diagram (`cloud-diagram/`)
 
 Generates PNG architecture diagrams for any cloud provider (Azure, AWS, GCP, Kubernetes, on-prem, and 10+ others) using the `diagrams` library (mingrammer/diagrams) with Graphviz rendering. Supports 2000+ node types across 16 providers.
 
