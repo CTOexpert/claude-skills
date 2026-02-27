@@ -24,23 +24,9 @@ The `SKILL.md` body serves as the full execution guide that Claude reads at invo
 
 ## Current Skills
 
-### azure-diagram (`azure-diagram/`)
-
-Generates PNG architecture diagrams in the Microsoft Azure Architecture Center style using Pillow.
-
-**Key files:**
-- `SKILL.md` — Skill manifest and execution guide
-- `azure-style-guide.md` — Visual spec (colours, typography, layout patterns) read by the LLM at render time
-- `setup_icons.py` — One-time icon downloader; fetches 683 official Azure SVGs from Microsoft CDN, converts to 64px PNGs via `rsvg-convert`, writes index to `/home/claude/.azure-icons/index.json`
-- `render_azure_diagram.py` — `AzureDiagram` class (builder pattern API: zones, services, connectors, actors, platform bar, annotations, legend)
-
-**Note:** The `SKILL.md` references a `references/` and `scripts/` subdirectory layout, but the actual files are flat in `azure-diagram/`. Keep this in mind if restructuring.
-
-**Python dependency:** `Pillow`. System dependencies for icon setup: `curl`, `rsvg-convert` (auto-installed).
-
 ### cloud-diagram (`diagram-as-code/`)
 
-Generates PNG architecture diagrams for any cloud provider (Azure, AWS, GCP, Kubernetes, on-prem, and 10+ others) using the `diagrams` library (mingrammer/diagrams) with Graphviz rendering. Supports 2000+ node types across 16 providers. Unlike the `azure-diagram` skill (Pillow-based, Azure-only), this uses the `diagrams` library which bundles official icons for all providers.
+Generates PNG architecture diagrams for any cloud provider (Azure, AWS, GCP, Kubernetes, on-prem, and 10+ others) using the `diagrams` library (mingrammer/diagrams) with Graphviz rendering. Supports 2000+ node types across 16 providers.
 
 **Key files:**
 - `SKILL.md` — Skill manifest and multi-cloud execution guide
