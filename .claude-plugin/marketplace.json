@@ -1,14 +1,19 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ctoexpert-marketplace",
+  "description": "Professional cloud architecture diagram generation tools by CTOexpert",
   "owner": {
     "name": "CTOexpert"
   },
   "plugins": [
     {
       "name": "cloud-diagram",
+      "description": "Generate multi-cloud architecture diagrams (Azure, AWS, GCP, K8s, on-prem) as PNG images with official provider icons. Supports 2000+ node types across 16 providers.",
       "source": "./cloud-diagram",
-      "description": "Generate multi-cloud architecture diagrams (Azure, AWS, GCP, K8s, on-prem) as PNG images with official provider icons",
-      "version": "1.1.0"
+      "category": "development",
+      "author": {
+        "name": "CTOexpert"
+      }
     }
   ]
 }

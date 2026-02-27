@@ -1,7 +1,6 @@
 {
   "name": "cloud-diagram",
-  "description": "Generate multi-cloud architecture diagrams (Azure, AWS, GCP, K8s, on-prem) as PNG images with official provider icons. Supports 2000+ node types across 16 providers.",
-  "version": "1.1.0",
+  "description": "Generate multi-cloud architecture diagrams (Azure, AWS, GCP, K8s, on-prem) as PNG images with official provider icons",
   "author": {
     "name": "CTOexpert"
   }
