@@ -37,6 +37,19 @@ Generates PNG architecture diagrams for any cloud provider (Azure, AWS, GCP, Kub
 
 **Python dependency:** `diagrams`. System dependency: `graphviz` (auto-installed).
 
+### cybersorted (`cybersorted/`)
+
+Security and enterprise architecture advisory skill. Role-aware guidance for CISOs, CTOs, CPOs, Security Architects, Security Engineers, and Enterprise Architects. Covers threat modeling, risk assessment, compliance mapping, document generation, code/config security review, maturity assessments, and tabletop simulations.
+
+**Key files:**
+- `SKILL.md` — Skill manifest and execution guide with workflow for all 6 capabilities
+- `roles/*.md` — Role-specific playbooks (ciso.md, cto.md, cpo.md, security-architect.md, security-engineer.md, enterprise-architect.md)
+- `frameworks/*.md` — Compliance framework quick-references (NIST 800-53, ISO 27001, SOC2, CIS Benchmarks, MITRE ATT&CK, Zero Trust)
+- `templates/*.md` — Document generation templates (threat model, security policy, IR plan, ADR, risk assessment, vendor risk, board briefing, maturity scorecard)
+- `checklists/*.md` — Security review checklists (IaC, Kubernetes, CI/CD, API, cloud configuration)
+
+**No Python dependencies.** Text-based advisory skill. References the cloud-diagram skill for architecture visualization.
+
 ## Adding a New Skill
 
 1. Create a new subdirectory at the repo root (e.g., `my-skill/`)

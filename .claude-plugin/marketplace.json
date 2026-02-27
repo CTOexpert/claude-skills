@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "ctoexpert-marketplace",
-  "description": "Professional cloud architecture diagram generation tools by CTOexpert",
+  "description": "Professional cloud architecture and cybersecurity advisory tools by CTOexpert",
   "owner": {
     "name": "CTOexpert"
   },
@@ -11,6 +11,15 @@
       "description": "Generate multi-cloud architecture diagrams (Azure, AWS, GCP, K8s, on-prem) as PNG images with official provider icons. Supports 2000+ node types across 16 providers.",
       "source": "./cloud-diagram",
       "category": "development",
+      "author": {
+        "name": "CTOexpert"
+      }
+    },
+    {
+      "name": "cybersorted",
+      "description": "Security and enterprise architecture advisory for CISOs, CTOs, CPOs, Security Architects, Security Engineers, and Enterprise Architects. Threat modeling, compliance mapping, code review, maturity assessments, and tabletop simulations.",
+      "source": "./cybersorted",
+      "category": "security",
       "author": {
         "name": "CTOexpert"
       }
