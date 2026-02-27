@@ -1,0 +1,14 @@
+{
+  "name": "ctoexpert-marketplace",
+  "owner": {
+    "name": "CTOexpert"
+  },
+  "plugins": [
+    {
+      "name": "cloud-diagram",
+      "source": "./cloud-diagram",
+      "description": "Generate multi-cloud architecture diagrams (Azure, AWS, GCP, K8s, on-prem) as PNG images with official provider icons",
+      "version": "1.1.0"
+    }
+  ]
+}
